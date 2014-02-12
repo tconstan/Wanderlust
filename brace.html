@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Style with our Karma bracelet or Mediterranean Sea Bracelet from Wanderlust Accessories for a hint of colour or elegance.">
+	<title>Wanderlust Accessories | Bracelets</title>
+	<link rel="stylesheet" href="main.css"/>
+	<script src="index.js"></script>
+	<script src="search.js"></script>
+	<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		function validateForm()
+		{
+		var x=document.forms["myForm"]["email"].value;
+		var atpos=x.indexOf("@");
+		var dotpos=x.lastIndexOf(".");
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+		  {
+		  alert("Not a valid e-mail address");
+		  return false;
+		  }
+		}
+	</script>
+	<script type="text/javascript">
+
+  		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-33491508-1']);
+  		_gaq.push(['_trackPageview']);
+
+  		(function() {
+   			 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    		 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    		 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+	</script>
+</head>
+<body onLoad="SMPSetFocus()">
+	<div id="wrapper">
+		<header id="header">
+			<div id="search" style="width:250px;">
+				<form name=formSearch action="javascript:SMPStartSearch() //">
+				<input style="width:100px;" name=txtSearch>&nbsp; <input style="width:60px;" name=send type=submit value=Search>
+				</form>
+			</div>
+			<img src="images/logo.jpg">
+		</header>
+	<nav id="menu">
+		<ul id="nav">
+		<li><a href="home.html">HOME</a></li>
+		<li><a href="our_story.html">ABOUT US</a>
+		</li>
+		<li><a href="wn.html">WHAT'S NEW</a></li>
+		<li><a>JEWELRY</a>
+			<ul>
+				<li><a href="nec.html">NECKLACES</a></li>
+				<li><a href="brace.html">BRACELETS</a></li>
+			</ul>
+		</li>
+		<li><a href="look.html">LOOKBOOK</a></li>
+		<li style="position:relative; left:270px;"><a href="bag.html">MY CART</a></li>
+		</ul>
+	</nav>
+	<div id="main" style="height:590px;">
+		<div id="desc" style="font: 13px Century Gothic; padding-top:10px ;padding-left:10px;"> <a href="home.html">HOME</a> > <a href="#nogo">JEWELRY</a> > <a href="brace.html">BRACELETS</a></div>
+		<div style="font: 20px Gill Sans; color:#666; border-bottom:1px solid #cccccc; padding-left:20px; padding-top:15px; padding-bottom:10px;">
+		BRACELETS
+			<form style="position:relative; float:right;">
+				<select name="results">
+					<option value="25">25</option>
+					<option value="50">50</option>
+					<option value="75">75</option>
+				</select>
+			</form>
+		<div style="position:relative; float:right; font: 14px sans-serif; padding-right:10px;">
+		Results per page:
+		</div>
+		</div>
+		<div style="position:absolute; height:500px; padding:15px;">
+			<a href="karma_gold.html"><img id="bottom_left" src="images/thumbs/karma_gold.jpg"
+				style="position:absolute; top:15px; left:30px; width:300px; height:200px; border:none;"/></a>
+			<div id="desc2" style="position:relative; left:70px; top:210px;"><a href="karma_gold.html"><em>karma bracelet - gold</em> | $20</a></div>
+			<a href="coral.html"><img id="bottom_left" src="images/thumbs/coral.jpg"
+				style="position:absolute; top:15px; left:360px; width:300px; height:200px; border:none;"/>
+			<div id="desc2" style="position:relative; left:420px; top:195px;"><a href="coral.html"><em>coral reef bracelet</em> | $27</a></div>
+			<a href="mediterranean_sea_bracelet.html"><img id="bottom_left" src="images/thumbs/med_sea_bracelet.jpg"
+				style="position:absolute; top:15px; left:690px; width:300px; height:200px; border:none;"/>
+			<div id="desc2" style="position:relative; left:720px; top:181px;"><a href="mediterranean_sea_bracelet.html"><em>mediterranean sea bracelet</em> | $25</a></div>
+			<a href="karma_silver.html"><img id="bottom_left" src="images/thumbs/karma_silver.jpg"
+				style="position:absolute; top:270px; left:30px; width:300px; height:200px; border:none;"/>
+			<div id="desc2" style="position:relative; left:70px; top:423px;"><a href="karma_silver.html"><em>karma bracelet - silver</em> | $20</a></div>	
+		</div>
+	</div>
+	<footer>
+		<ul id="bottom_menu">
+			<li><a href="cserv.html">Customer Service</a></li>
+			<li><a href="tc.html">Terms & Conditions</a></li>
+		</ul>
+		
+		<div id="email">
+			<form method="post" name="myemailform" action="form-to-email.php" onsubmit="return validateForm();">
+				<input type="text" id="add_mail" value="Join mailing list" onfocus="if(this.value=='Join mailing list')this.value=''" onblur="if(this.value=='')this.value='join mailing list'" name="email">
+				<input type="submit" name='submit' style="width:60px;" value="JOIN">
+			</form>
+		<script language="JavaScript">
+		// Code for validating the form
+		// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+		// for details
+			var frmvalidator  = new Validator("myemailform");
+			frmvalidator.addValidation("email","req","Please provide your email"); 
+		</script>
+		</div>
+		<div id="sfeeds">
+		<em><a href="http://www.facebook.com/wanderlustaccessories">facebook</a></em>&nbsp;|
+		<em><a href="https://twitter.com/wanderlust_acc">twitter</a></em>&nbsp;|
+		<em><a href="http://wanderlustaccessories.tumblr.com/">tumblr</a></em>&nbsp;|
+		<em><a href="http://pinterest.com/wanderlustacc/">pinterest</a></em>
+		</div>
+		
+		<div id="footnote">
+		2012 Wanderlust Accessories &copy;&nbsp;| Site by Thomas Constantin
+		</div>
+	</footer>
+	</div>
+</body>
+</html>

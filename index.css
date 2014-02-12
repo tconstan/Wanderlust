@@ -1,0 +1,198 @@
+/* Credits: Stu Nicholls */
+/* URL: http://www.stunicholls.com/menu/skeleton/skeleton.css */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+header, section, footer, aside, nav, article, hgroup{
+	display:block;
+}
+header{
+	border-bottom:1px solid #cccccc;
+	margin-bottom:5px;
+}
+#wrapper{
+	max-width:1000px;
+	margin:0px auto;
+}
+a:link{
+	color:#000;
+	text-decoration:none;
+}
+a:visited{
+	color:#000;
+	text-decoration:none;
+}
+a:hover{
+	color:#000;
+	text-decoration:underline;
+}
+#nav, 
+#nav ul {
+	padding:0 0 5px 0;
+	margin:0; list-style:none;
+	font: 10px verdana, sans-serif;
+	border:1px solid #f8f8ff;
+	border-color:#f8f8ff #cccccc #cccccc #f8f8ff;
+	border-width:1px 2px 2px 1px;
+	background:#fff; position:relative;
+	z-index:200;
+}
+#nav {height:25px; padding:0;}
+
+#nav li {float:left;}
+#nav li li {float:none;}
+/* a hack for IE5.x and IE6 */
+* html #nav li li {float:left;}
+
+#nav li a {
+	display:block;
+	float:left;
+	color:#888;
+	margin:0 25px 0 10px;
+	height:25px;
+	line-height:25px;
+	text-decoration:none;
+	white-space:nowrap;
+}
+#nav li li a {
+	height:20px;
+	line-height:20px;
+	float:none;
+}
+
+#nav li:hover {position:relative; z-index:300;}
+#nav li:hover ul {left:0; top:22px;}
+/* hack for IE5.5 and IE6 */
+* html #nav li:hover ul {left:10px;}
+
+#nav ul {position:absolute; left:-9999px; top:-9999px;}
+/* hack for IE5.x and IE6 */
+* html #nav ul {width:1px;}
+
+/* show next level */
+#nav li:hover li:hover > ul {left:-15px; margin-left:100%; top:-1px;}
+/* keep further levels hidden */
+#nav li:hover > ul ul {position:absolute; left:-9999px; top:-9999px; width:auto;}
+/* show path followed */
+#nav li:hover > a {text-decoration:none; color:#000;}
+
+
+/* show next level */
+#nav li:hover li:hover ul,
+#nav li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover li:hover ul
+{left:-15px; margin-left:100%; top:-1px;}
+
+/* keep further levels hidden */
+#nav li:hover ul ul,
+#nav li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover li:hover ul ul
+{position:absolute; left:-9999px; top:-9999px;}
+
+/* show path followed */
+#nav li:hover a,
+#nav li:hover li:hover a,
+#nav li:hover li:hover li:hover a,
+#nav li:hover li:hover li:hover li:hover a,
+#nav li:hover li:hover li:hover li:hover li:hover a,
+#nav li:hover li:hover li:hover li:hover li:hover li:hover a
+{text-decoration:none; color:#000;}
+
+/* hide futher possible paths */
+#nav li:hover li a,
+#nav li:hover li:hover li a,
+#nav li:hover li:hover li:hover li a,
+#nav li:hover li:hover li:hover li:hover li a,
+#nav li:hover li:hover li:hover li:hover li:hover li a
+{text-decoration:none; color:#888;}
+
+#sfeeds{
+	position:relative;
+	left:900px;
+	bottom:30px;
+}
+#follow{
+	font: 10px verdana, sans-serif;
+	position:relative;
+	left:820px;
+	bottom:10px;
+}
+#search{
+	margin-left:860px;
+	filter:alpha(opacity=40);
+	-webkit-opacity: 0.4;
+	-moz-opacity:; 0.4;
+	opacity:.4;
+	width:140px;
+}
+#search:hover{
+	filter:alpha(opacity=100);
+	-webkit-opacity: 1.0;
+	-moz-opacity:1.0;
+	opacity:1.0;
+}
+#search input{
+	width:140px;
+	font-size:11px;
+	background:#fff;
+}
+#search input:focus{
+	background:#fff;
+}
+
+#cmain{
+	position:relative;
+	font: 18px verdana, sans-serif;
+	left:380px;
+}
+#main{
+	margin:10px auto;
+	display:block;
+}
+#vid{
+	position:relative;
+	left:50px;
+}
+#bottom_menu{
+	border-top:1px solid #cccccc;
+}
+#bottom_menu li{
+	padding-left:10px;
+	display:inline-block;
+	list-style:none;
+	font: 10px verdana, sans-serif;
+}
+#news{
+	position:relative;
+	left:760px;
+	bottom:18px;
+	font: 11px verdana, sans-serif;
+}
+#h{
+	font: 11px verdana, sans-serif;
+}
+#skip{
+	background-color:#cccccc;
+	font: 14px verdana, sans-serif;
+	border-top-left-radius: 7px;
+	opacity:0.5;
+	padding:5px;
+	width:40px;
+	position:relative;
+	bottom:72px;
+	left:900px;
+}
+#i{
+	font: 11px verdana, sans-serif;
+}
+#footnote{
+	position:relative;
+	bottom:30px;
+	color:#888;
+	font: 9px verdana, sans-serif;
+}

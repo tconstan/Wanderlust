@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="TSW WebCoder">
+	<meta name="description" content="Browse the latest necklaces and bracelets at Wanderlust Accessories to style your outfits. ">
+	<title>Wanderlust Accessories | Thank you!</title>
+	<link rel="stylesheet" href="main.css"/>
+	<script src="index.js"></script>
+	<script src="search.js"></script>
+	<script type="text/javascript">
+		function validateForm()
+		{
+		var x=document.forms["myForm"]["email"].value;
+		var atpos=x.indexOf("@");
+		var dotpos=x.lastIndexOf(".");
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+		  {
+		  alert("Not a valid e-mail address");
+		  return false;
+		  }
+		}
+	</script>
+</head>
+<body onLoad="SMPSetFocus()" style="position:relative; left:600px; bottom:150px;">
+	<div id="wrapper">
+		<header id="header">
+			<div id="search" style="width:250px;">
+				<form name=formSearch action="javascript:SMPStartSearch() //">
+				<input style="width:100px;" name=txtSearch>&nbsp; <input style="width:60px;" name=send type=submit value=Search>
+				</form>
+			</div>
+			<img src="images/logo.jpg">
+		</header>
+	<nav id="menu">
+		<ul id="nav">
+		<li><a href="home.html">HOME</a></li>
+		<li><a href="our_story.html">ABOUT US</a>
+		</li>
+		<li><a href="wn.html">WHAT'S NEW</a></li>
+		<li><a>JEWELRY</a>
+			<ul>
+				<li><a href="nec.html">NECKLACES</a></li>
+				<li><a href="brace.html">BRACELETS</a></li>
+			</ul>
+		</li>
+		<li><a href="look.html">LOOKBOOK</a></li>
+		<li style="position:relative; left:270px;"><a href="bag.html">MY CART</a></li>
+		</ul>
+	</nav>
+	<div id="main" style="font:18px Gill Sans;">
+	<br />Thanks for joining our mailing list!
+	<br /><br />
+	</div>
+	<footer>
+		<ul id="bottom_menu">
+			<li><a href="cserv.html">Customer Service</a></li>
+			<li><a href="tc.html">Terms & Conditions</a></li>
+		</ul>
+		
+		<div id="email">
+			<form name="myForm" action="mailto:info@wanderlustaccessories.ca" onsubmit="return validateForm();" method="post">
+				<input type="text" id="add_mail" value="Join mailing list" onfocus="if(this.value=='Join mailing list')this.value=''" onblur="if(this.value=='')this.value='join mailing list'"name="email">
+				<input type="submit" style="width:60px;" value="JOIN">
+			</form>
+		</div>
+		<div id="sfeeds">
+		<em><a href="http://www.facebook.com/wanderlustaccessories">facebook</a></em>&nbsp;|
+		<em><a href="https://twitter.com/wanderlust_acc">twitter</a></em>&nbsp;|
+		<em><a href="http://wanderlustaccessories.tumblr.com/">tumblr</a></em>&nbsp;|
+		<em><a href="http://pinterest.com/wanderlustacc/">pinterest</a></em>
+		</div>
+		
+		<div id="footnote">
+		2012 Wanderlust Accessories &copy;&nbsp;| Site by Thomas Constantin
+		</div>
+	</footer>
+	</div>
+</body>
+</html>

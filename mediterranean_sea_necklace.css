@@ -1,0 +1,29 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls/gallery/left_right_click.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+#gallery {width:400px; position:relative; height:60px; padding-top:266px; bottom:50px;}
+
+#gallery ul li {list-style:none; display:inline-block; width:80px; height:53px; float:left; margin-right:6px; cursor:pointer;}
+
+#gallery ul li.hide {display:none;}
+
+/* using background images */
+#gallery ul li.th1 {background:url(images/Mediterranean_Sea_Necklace/1tb.jpg);}
+#gallery ul li.th2 {background:url(images/Mediterranean_Sea_Necklace/2tb.jpg);}
+
+/* remove visibility:hidden; if you want to use the original images as thumbnails */
+#gallery ul li img {visibility:hidden; display:block; width:80px; height:53px;}
+
+
+#gallery ul li.chosen {cursor:default;}
+#gallery ul li.chosen div {position:absolute; left:0; top:0; width:300px; height:240px;}
+#gallery ul li.chosen div i {position:relative; top:15px; width:300px; height:255px; display:table-cell;} 
+#gallery ul li.chosen div i img {visibility:visible; width:340px; height:220px; margin:0 auto;}
+#gallery ul li.chosen span {display:block;}

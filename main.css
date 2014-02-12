@@ -1,0 +1,300 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/gallery/simple.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+header, section, footer, aside, nav, article, hgroup{
+	display:block;
+}
+footer{
+	border-top:1px solid #cccccc;
+}
+header{
+	border-bottom:1px solid #cccccc;
+	margin-bottom:5px;
+}
+#wrapper{
+	max-width:1000px;
+	margin:0px auto;
+}
+a:link{
+	color:#000;
+	text-decoration:none;
+}
+a:visited{
+	color:#000;
+	text-decoration:none;
+}
+a:hover{
+	color:#aaa;
+	text-decoration:none;
+}
+#nav, 
+#nav ul {
+	padding:5px 0 5px 0;
+	margin:0; list-style:none;
+	font: 12px Gill Sans;
+	background:#fff; position:relative;
+	z-index:200;
+}
+#nav {height:25px; padding:0;}
+
+#nav li {float:left;}
+#nav li li {float:none;}
+/* a hack for IE5.x and IE6 */
+* html #nav li li {float:left;}
+
+#nav li a {
+	display:block;
+	float:left;
+	color:#666;
+	margin:0 25px 0 10px;
+	height:25px;
+	line-height:25px;
+	text-decoration:none;
+	white-space:nowrap;
+}
+#nav li li a {
+	height:20px;
+	line-height:20px;
+	float:none;
+}
+
+#nav li:hover {position:relative; z-index:300;}
+#nav li:hover ul {left:0; top:22px;}
+/* hack for IE5.5 and IE6 */
+* html #nav li:hover ul {left:10px;}
+
+#nav ul {position:absolute; left:-9999px; top:-9999px;}
+/* hack for IE5.x and IE6 */
+* html #nav ul {width:1px;}
+
+/* show next level */
+#nav li:hover li:hover > ul {left:-15px; margin-left:100%; top:-1px;}
+/* keep further levels hidden */
+#nav li:hover > ul ul {position:absolute; left:-9999px; top:-9999px; width:auto;}
+/* show path followed */
+#nav li:hover > a {text-decoration:none; color:#000;}
+
+
+/* show next level */
+#nav li:hover li:hover ul,
+#nav li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover li:hover ul
+{left:-15px; margin-left:100%; top:-1px;}
+
+/* keep further levels hidden */
+#nav li:hover ul ul,
+#nav li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover li:hover ul ul
+{position:absolute; left:-9999px; top:-9999px;}
+
+/* show path followed */
+#nav li:hover a,
+#nav li:hover li:hover a,
+#nav li:hover li:hover li:hover a,
+#nav li:hover li:hover li:hover li:hover a,
+#nav li:hover li:hover li:hover li:hover li:hover a,
+#nav li:hover li:hover li:hover li:hover li:hover li:hover a
+{text-decoration:none; color:#aaa;}
+
+/* hide futher possible paths */
+#nav li:hover li a,
+#nav li:hover li:hover li a,
+#nav li:hover li:hover li:hover li a,
+#nav li:hover li:hover li:hover li:hover li a,
+#nav li:hover li:hover li:hover li:hover li:hover li a
+{text-decoration:none; color:#666;}
+
+#top_menu li{
+	float:right;
+	padding-left:30px;
+	padding-top:10px;
+	padding-bottom:20px;
+	display:inline-block;
+	list-style:none;
+	font: 14px Gill Sans;
+}
+#sfeeds{
+	position:relative;
+	bottom:15px;
+	float:right;
+	padding-right:20px;
+}
+#menu{
+	border-bottom:1px solid #cccccc;
+}
+#search{
+	position:relative;
+	top:232px;
+	left:825px;
+	filter:alpha(opacity=50);
+	-webkit-opacity: 0.5;
+	-moz-opacity:; 0.5;
+	opacity:.5;
+	z-index:201;
+}
+#search:hover{
+	filter:alpha(opacity=100);
+	-webkit-opacity: 1.0;
+	-moz-opacity:1.0;
+	opacity:1.0;
+}
+#search input{
+	width:140px;
+	font-size:12px;
+	background:#fff;
+}
+#search input:focus{
+	background:#fff;
+}
+#add_mail{
+	filter:alpha(opacity=50);
+	-webkit-opacity: 0.5;
+	-moz-opacity:; 0.5;
+	opacity:.5;
+	z-index:201;
+}
+#add_mail:hover{
+	filter:alpha(opacity=100);
+	-webkit-opacity: 1.0;
+	-moz-opacity:1.0;
+	opacity:1.0;
+}
+#add_mail input{
+	width:140px;
+	font-size:12px;
+	background:#fff;
+}
+#add_mail input:focus{
+	background:#fff;
+}
+#cmain{
+	position:relative;
+	font: 18px, sans-serif;
+	left:380px;
+}
+#main{
+	margin:10px auto;
+	display:block;
+	font: 16px sans-serif;
+}
+#desc2 a:link{
+	font:12px Georgia;
+	text-decoration:none;
+	color:#666;
+}
+#desc2 a:visited{
+	text-decoration:none;
+	color:#666;
+}
+#desc2 a:hover{
+	text-decoration:underline;
+	color:#aaa;
+}
+#desc a:link{
+	text-decoration:none;
+	color:#666;
+}
+#desc a:visited{
+	text-decoration:none;
+	color:#666;
+}
+#desc a:hover{
+	text-decoration:underline;
+	color:#aaa;
+}
+
+#vid{
+	position:relative;
+	left:50px;
+}
+#bottom_menu a:link{
+	font:12px Gill Sans;
+	color:#666;
+}
+#bottom_menu a:visited{
+	color:#666;
+}
+#bottom_menu a:hover{
+	color:#aaa;
+}
+#bottom_menu{
+	position:relative;
+	z-index:100;
+}
+#bottom_menu li{
+	padding-left:10px;
+	display:inline-block;
+	list-style:none;
+}
+#email{
+	position:relative;
+	z-index:100;
+	bottom:15px;
+	font: 12px sans-serif;
+	filter:alpha(opacity=50);
+	-webkit-opacity: 0.6;
+	-moz-opacity:; 0.6;
+	opacity:.7;
+	float:right;
+}
+#email:hover{
+	filter:alpha(opacity=100);
+	-webkit-opacity: 1.0;
+	-moz-opacity:1.0;
+	opacity:1.0;
+}
+#email input{
+	width:100px;
+	font-size:12px;
+	background:#fff;
+}
+#email input:focus{
+	background:#fff;
+}
+#sfeeds a:link{
+	color:#666;
+}
+#sfeeds a:visited{
+	color:#666;
+}
+#sfeeds a:hover{
+	color:#aaa;
+}
+#sfeeds{
+	position:relative;
+	z-index:100;
+	font:12px Georgia;
+	color:#666;
+}
+
+#h{
+	font: 12px sans-serif;
+}
+#i{
+	font: 12px sans-serif;
+}
+#footnote{
+	padding-left:10px;
+	padding-top:20px;
+	padding-bottom:10px;
+	color:#666;
+	font: 10px Gill Sans;
+}
+#img_option li{
+	display:inline-block;
+	list-style:none;
+}

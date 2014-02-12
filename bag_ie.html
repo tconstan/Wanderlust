@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Wanderlust Accessories</title>
+	<link rel="stylesheet" href="main.css"/>
+	<link rel="stylesheet" href="shopping_cart.css"/>
+	<script src="index.js"></script>
+	<script type="text/javascript">
+		function validateForm()
+		{
+		var x=document.forms["myForm"]["email"].value;
+		var atpos=x.indexOf("@");
+		var dotpos=x.lastIndexOf(".");
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+		  {
+		  alert("Not a valid e-mail address");
+		  return false;
+		  }
+		}
+	</script>
+	<script src="simpleCart.js"></script>
+	<script>
+		simpleCart({
+		//Setting the Cart Columns for the sidebar cart display.
+		checkout: {
+			type: "PayPal" ,
+			email: "you@yours.com"
+		},
+		currency: "CAD",
+		shippingFlatRate: 3.79,
+		cartColumns: [
+			//Name of the item
+			{ attr: "name" , label: "Name" },
+			//Quantity displayed as an input
+			{ attr: "quantity", label: "Quantity", view: "input"},
+			//Built in view for a remove link
+			{ view:'remove', text: "Remove", label: false},
+			//Price of item
+			{ attr: "price", label: "Price"},
+			//Subtotal of that row (quantity of that item * the price)
+			{ attr: "total" , label: "Subtotal", view: "currency"  }
+		],
+		cartStyle: "table"
+	});
+		</script>
+	<script src="jquery.js"></script>
+	
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div id="search">
+				<form method="post" id="sform" action="http://www.wanderlust.com/">
+				<input type="text" size="15" name="s" value="Search" id="q" onfocus="if(this.value=='Search')this.value=''" onblur="if(this.value=='')this.value='Search'"/>
+				</form>
+			</div>
+			<img src="images/logo.jpg">
+		</header>
+	<nav id="menu">
+		<ul id="nav">
+		<li><a href="home.html">HOME</a></li>
+		<li><a href="our_story.html">ABOUT US</a>
+		</li>
+		<li><a href="wn.html">WHAT'S NEW</a></li>
+		<li><a>JEWELRY</a>
+			<ul>
+				<li><a href="nec.html">NECKLACES</a></li>
+				<li><a href="brace.html">BRACELETS</a></li>
+			</ul>
+		</li>
+		<li><a href="look.html">LOOKBOOK</a></li>
+		<li style="position:relative; left:290px;"><a href="bag.html">MY CART</a></li>
+		</ul>
+	</nav>
+	<div id="main">
+		
+		<section>
+		<h2 class="">Cart</h2>
+		<div class="simpleCart_items"></div>
+		</section>
+		
+		<a href="javascript:;" class="simpleCart_empty" style="margin-right:15px; padding:4px; border:1px solid #ccc; 
+			background: #ededed;
+			background: -moz-linear-gradient(top,  #f7f7f7 0%, #ededed 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#ededed));
+			background: -webkit-linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+			background: -o-linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+			background: -ms-linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+			background: linear-gradient(top,  #f7f7f7 0%,#ededed 100%);">Empty Cart</a>
+		<a href="javascript:;" class="simpleCart_checkout" style="padding:4px; border:1px solid #ccc; 
+			background: #ededed;
+			background: -moz-linear-gradient(top,  #f7f7f7 0%, #ededed 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#ededed));
+			background: -webkit-linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+			background: -o-linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+			background: -ms-linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+			background: linear-gradient(top,  #f7f7f7 0%,#ededed 100%);">Checkout</a>	
+
+	
+	</div>
+	<footer>
+		<ul id="bottom_menu">
+			<li><a href="cserv.html">Customer Service</a></li>
+			<li><a href="tc.html">Terms & Conditions</a></li>
+		</ul>
+		
+		<div id="email">
+			<form name="myForm" action="mailto:info@wanderlustaccessories.ca" onsubmit="return validateForm();" method="post">
+				<input type="text" value="join mailing list" name="email">
+				<input type="submit" value="Join">
+			</form>
+		</div>
+		<div id="sfeeds">
+		<em><a href="http://www.facebook.com/wanderlustaccessories">facebook</a></em>&nbsp;|
+		<em><a href="https://twitter.com/wanderlust_acc">twitter</a></em>&nbsp;|
+		<em><a href="http://wanderlustaccessories.tumblr.com/">tumblr</a></em>&nbsp;|
+		<em><a href="http://pinterest.com/wanderlustacc/">pinterest</a></em>
+		</div>
+		
+		<div id="footnote">
+		2012 Wanderlust Accessories &copy;&nbsp;| Site by Thomas Constantin
+		</div>
+	</footer>
+	</div>
+</body>
+</html>

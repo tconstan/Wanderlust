@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="At Wanderlust Accessories, inspiration is derived from various experiences, places, ethnicities and cultures. Shop here for unique handmade pieces.">
+	<title>Wanderlust Accessories | Our Story</title>
+	<link rel="stylesheet" href="main.css"/>
+	<script src="index.js"></script>
+	<script src="search.js"></script>
+	<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		function validateForm()
+		{
+		var x=document.forms["myForm"]["email"].value;
+		var atpos=x.indexOf("@");
+		var dotpos=x.lastIndexOf(".");
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+		  {
+		  alert("Not a valid e-mail address");
+		  return false;
+		  }
+		}
+	</script>
+	<script type="text/javascript">
+
+  		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-33491508-1']);
+  		_gaq.push(['_trackPageview']);
+
+  		(function() {
+   			 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    		 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    		 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+	</script>
+</head>
+<body onLoad="SMPSetFocus()">
+	<div id="wrapper">
+		<header id="header">
+			<div id="search" style="width:250px;">
+				<form name=formSearch action="javascript:SMPStartSearch() //">
+				<input style="width:100px;" name=txtSearch>&nbsp; <input style="width:60px;" name=send type=submit value=Search>
+				</form>
+			</div>
+			<img src="images/logo.jpg">
+		</header>
+	<nav id="menu">
+		<ul id="nav">
+		<li><a href="home.html">HOME</a></li>
+		<li><a href="our_story.html">ABOUT US</a>
+		</li>
+		<li><a href="wn.html">WHAT'S NEW</a></li>
+		<li><a>JEWELRY</a>
+			<ul>
+				<li><a href="nec.html">NECKLACES</a></li>
+				<li><a href="brace.html">BRACELETS</a></li>
+			</ul>
+		</li>
+		<li><a href="look.html">LOOKBOOK</a></li>
+		<li style="position:relative; left:270px;"><a href="bag.html">MY CART</a></li>
+		</ul>
+	</nav>
+	<div id="main">
+		<div id="desc" style="font: 13px Century Gothic; color:#666; padding-top:10px ;padding-left:10px;"> <a href="home.html">HOME</a> > <a href="our_story.html">ABOUT US</a></div>
+		<div style="font: 20px Gill Sans; color:#666; padding-left:20px; padding-top:15px; padding-bottom:10px; border-bottom:1px solid #cccccc;">ABOUT US</div>
+		<div style="position:relative; height:300px; padding:15px;">
+			<img id="bottom_left" src="images/carolyn.jpg"
+				style="position:absolute; top:15px; left:80px; height:300px; border:none;"/>
+			<div style="position:absolute; left:320px; width:600px; font: 14px Gill Sans; color:#333;">
+				What does Wanderlust mean? Wanderlust is a strong desire for travel. <br /><br />
+				Wanderlust Accessories founder and owner Carolyn Chen has always been a free spirit who loves to explore and try new things. Throughout the years, she has been infatuated with the freedom of art and also the power of expression through fashion. At Wanderlust, the inspiration is derived from various experiences, places, ethnicities and cultures. With all the pieces being handmade, she aims to create high-quality pieces that are simple enough to be worn everyday and yet add something special to every outfit. Wanderlust Accessories is committed to making a difference in the community, one way of which is by supporting CAISA Fashion Show and Children’s Health Foundation through the Karma bracelet.<br /><br />
+				To learn more, check out our <a href="https://twitter.com/wanderlust_acc">Twitter</a>, 
+				<a href="http://wanderlustaccessories.tumblr.com/">Tumblr</a>,
+				<a href="http://www.facebook.com/wanderlustaccessories">Facebook</a>, and 
+				<a href="http://pinterest.com/wanderlustacc/">Pinterest</a>. 
+			</div>
+		</div>
+	</div>
+	<footer>
+		<ul id="bottom_menu">
+			<li><a href="cserv.html">Customer Service</a></li>
+			<li><a href="tc.html">Terms & Conditions</a></li>
+		</ul>
+		
+		<div id="email">
+			<form method="post" name="myemailform" action="form-to-email.php" onsubmit="return validateForm();">
+				<input type="text" id="add_mail" value="Join mailing list" onfocus="if(this.value=='Join mailing list')this.value=''" onblur="if(this.value=='')this.value='join mailing list'" name="email">
+				<input type="submit" name='submit' style="width:60px;" value="JOIN">
+			</form>
+		<script language="JavaScript">
+		// Code for validating the form
+		// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+		// for details
+			var frmvalidator  = new Validator("myemailform");
+			frmvalidator.addValidation("email","req","Please provide your email"); 
+		</script>
+		</div>
+		<div id="sfeeds">
+		<em><a href="http://www.facebook.com/wanderlustaccessories">facebook</a></em>&nbsp;|
+		<em><a href="https://twitter.com/wanderlust_acc">twitter</a></em>&nbsp;|
+		<em><a href="http://wanderlustaccessories.tumblr.com/">tumblr</a></em>&nbsp;|
+		<em><a href="http://pinterest.com/wanderlustacc/">pinterest</a></em>
+		</div>
+		
+		<div id="footnote" >
+		2012 Wanderlust Accessories &copy;&nbsp;| Site by Thomas Constantin
+		</div>
+	</footer>
+	</div>
+</body>
+</html>

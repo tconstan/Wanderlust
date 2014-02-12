@@ -1,0 +1,16 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls/gallery/left_right_click.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+/* vertical align for IE */
+#gallery ul li.chosen i {display:block;}
+#gallery ul li.chosen i em {width:0; height:100%; display:inline-block; vertical-align:middle;} 
+#gallery ul li.chosen i img {display:inline-block; vertical-align:middle;}
+/* for IE6 initial photo size */
+#gallery ul li.chosen i img.start {width:390px; height:259px;}
